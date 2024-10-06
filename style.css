@@ -2,6 +2,7 @@
 
 html {
     background-color: black;
+    padding: 40px;
 }
 
 body {
@@ -32,25 +33,41 @@ figcaption {
     justify-content: center position: fixed;
     z-index: 2;
     font-weight: bold;
-
+    font-size: 1em
 }
 
-label {}
+label {
+    font-size: 1em
+}
 
-input {}
+input {
+    font-size: 1em
+}
 
 
 small {
     font-size: 1em;
 }
 
-
+footer {
+    background-color: black;
+    color: white;
+}
 
 nav {
     font-size: 1.5em;
     background-color: black;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
 
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    display: inline;
 
 }
 
@@ -59,8 +76,18 @@ h1 {
     text-align: center;
 }
 
+h1 p {
+    text-align: left;
+}
+
 h2 {
     font-size: 2em;
+    text-align: center;
+}
+
+h2,
+p {
+    text-align: center;
 }
 
 .back-to-top {
@@ -72,4 +99,33 @@ h2 {
     color: white;
     text-decoration: none;
 
+}
+
+.submit {
+    background-color: #007d7b
+}
+
+contact,
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+
+
+/* -------------------- MEDIA QUERY (small) ------------------------------- */
+@media (min-width: 485px) {
+    display: flex;
+    flex-direction: row;
+}
+
+/* -------------------- MEDIA QUERY (medium) -------------------------------- */
+@media (max-width: 880px) {
+    justified content: center;
+}
+
+/* -------------------- MEDIA QUERY (large) ------------------------------------ */
+@media (min-width: 1300px) {
+    justified-content: right;
 }
