@@ -28,7 +28,12 @@ p {
     text-align: left;
 }
 
-figcaption {}
+figcaption {
+    justify-content: center position: fixed;
+    z-index: 2;
+    font-weight: bold;
+
+}
 
 label {}
 
