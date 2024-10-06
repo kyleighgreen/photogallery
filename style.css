@@ -76,7 +76,7 @@ h1 {
     text-align: center;
 }
 
-h1 p {
+h1+p {
     text-align: left;
 }
 
@@ -114,18 +114,46 @@ ul {
 
 
 
-/* -------------------- MEDIA QUERY (small) ------------------------------- */
+.container {
+    display: grid;
+    gap: 20px;
+    /* Adds space between grid items */
+    padding: 20px;
+}
+
+/* Default layout for small screens (mobile first) */
+.container {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 column layout */
+}
+
+.container figure {
+    margin: 0;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media query for screens 485px and wider */
 @media (min-width: 485px) {
-    display: flex;
-    flex-direction: row;
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
-/* -------------------- MEDIA QUERY (medium) -------------------------------- */
-@media (max-width: 880px) {
-    justified content: center;
+/* Media query for screens 880px and wider */
+@media (min-width: 880px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* -------------------- MEDIA QUERY (large) ------------------------------------ */
+/* Media query for screens 1300px and wider */
 @media (min-width: 1300px) {
-    justified-content: right;
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
