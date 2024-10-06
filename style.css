@@ -7,7 +7,6 @@ html {
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: white;
-    text-align: center;
 }
 
 .figure-grid {
@@ -21,15 +20,20 @@ body {
 
 header {
     color: #007d7b;
+    text-align: center;
 }
 
 p {
     font-size: 1.25em;
 }
 
-figcaption,
-label,
-input,
+figcaption {}
+
+label {}
+
+input {}
+
+
 small {
     font-size: 1em;
 }
@@ -41,10 +45,12 @@ nav {
     background-color: black;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
+
 }
 
 h1 {
     font-size: 3em;
+    text-align: center;
 }
 
 h2 {
