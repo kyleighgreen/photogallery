@@ -10,7 +10,7 @@ body {
     background-color: white;
 }
 
-.figure-grid {
+.container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -111,8 +111,6 @@ ul {
     list-style-type: none;
     text-align: center;
 }
-
-
 
 
 .container {
