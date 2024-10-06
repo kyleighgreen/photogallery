@@ -30,7 +30,8 @@ p {
 }
 
 figcaption {
-    justify-content: center position: fixed;
+    justify-content: center;
+    position: fixed;
     z-index: 2;
     font-weight: bold;
     font-size: 1em
