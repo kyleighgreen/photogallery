@@ -9,6 +9,16 @@ body {
     background-color: white;
 }
 
+.figure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Adjusts number of columns based on container width */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
 header {
     color: #007d7b;
 }
