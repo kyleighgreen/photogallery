@@ -3,10 +3,12 @@
 html {
     background-color: black;
     padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
@@ -28,16 +30,12 @@ header {
     padding: 20px;
 }
 
-p,
 figcaption {
+    top: 0;
+    width: 100%;
     font-size: 1.25em;
     text-align: center;
-}
 
-figcaption {
-    position: absolute;
-    left: 0;
-    width: 100%;
 }
 
 li,
@@ -48,7 +46,7 @@ label {
 }
 
 input {
-    width: 775px;
+    width: 93%;
     padding: 5px;
     font-size: 1em;
     margin-bottom: 20px;
@@ -65,7 +63,7 @@ input::placeholder {
 
 
 footer {
-
+    background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
@@ -81,20 +79,24 @@ nav {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: bold;
     color: #ffffff;
     padding: 10px;
-    display: fixed;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 h1 {
     font-size: 3em;
-    text-align: center;
+    text-align: left;
 }
 
 h1+p {
@@ -105,6 +107,8 @@ h2,
 h3 {
     font-size: 2em;
     text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 h2~p {
@@ -125,19 +129,21 @@ h2~p {
 .submit-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 
 .submit {
     background-color: #007d7b;
-    border-radius: 15px;
+    border-radius: 20px;
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 20px;
     width: 350px;
+    border: none;
+    padding: 10px 20px;
     text-align: center;
     font-size: 1em;
-    margin-top: 50px;
+    margin-top: 10px;
+    display: flex;
 }
 
 
@@ -145,6 +151,8 @@ contact,
 ul {
     list-style-type: none;
     text-align: center;
+    display: inline;
+
 }
 
 
@@ -154,6 +162,13 @@ ul {
 @media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+        /* On larger screens, make the input box half the width */
+        max-width: 400px;
+        /* Limit the width on larger screens */
     }
 }
 
@@ -176,16 +191,20 @@ ul {
     .figure-grid {
         grid-template-columns: repeat(4, 1fr);
     }
-}
 
-figure {
-    margin: 0;
-    text-align: center;
-}
+    input {
+        width: 50%;
+        max-width: 600px;
+    }
 
-img {
-    width: 100%;
-    height: auto;
-    display: grid;
-    margin: 0;
-}
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: grid;
+        margin: 0;
+    }
