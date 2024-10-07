@@ -162,7 +162,7 @@ ul {
 }
 
 
-@media (max-width: 485px) {
+@media (min-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
     }
