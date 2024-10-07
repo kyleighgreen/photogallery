@@ -16,7 +16,7 @@ body {
 }
 
 
-.figure-grid {
+.figure-grid img {
     display: grid;
     gap: 20px;
     padding: 20px;
