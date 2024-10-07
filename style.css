@@ -35,10 +35,17 @@ figcaption {
 }
 
 figcaption {
-    justify-content: center;
-    z-index: 2;
-    font-weight: bold;
-    position: relative;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: white;
+    /* Text color for better readability */
+    padding: 5px 10px;
+    /* Smaller padding */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    z-index: 10;
+    /* Ensure the caption is above the image */
 }
 
 li,
@@ -188,5 +195,5 @@ img {
     width: 100%;
     height: auto;
     display: grid;
-    margin: 2px;
+    margin: 0;
 }
