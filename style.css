@@ -17,6 +17,9 @@ body {
     flex-direction: column;
 }
 
+p {
+    font-size: 1.25em;
+}
 
 .figure-grid {
     display: grid;
@@ -36,6 +39,7 @@ figcaption {
     font-size: 1.25em;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
 
 }
 
@@ -164,7 +168,6 @@ ul {
     .figure-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
 /* 2 column layout for screens 485px and wider */
@@ -187,6 +190,10 @@ ul {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    input {
+        width: 50%;
+        max-width: 600px;
+    }
 
     figure {
         margin: 0;
