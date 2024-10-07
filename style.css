@@ -164,12 +164,6 @@ ul {
         grid-template-columns: 1fr;
     }
 
-    input {
-        width: 100%;
-        /* On larger screens, make the input box half the width */
-        max-width: 400px;
-        /* Limit the width on larger screens */
-    }
 }
 
 /* 2 column layout for screens 485px and wider */
