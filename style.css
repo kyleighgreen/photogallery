@@ -93,19 +93,17 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    /* Add padding to move it away from the content */
     position: relative;
     bottom: 0;
     width: 100%;
-    /* Make sure it spans the full width */
 }
 
-/* Center submit button */
+
 .submit-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    /* Add margin to space it from the form or other elements */
+
 }
 
 .submit {
