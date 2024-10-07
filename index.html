@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TK Photography</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -20,14 +20,14 @@
         <a href="#contact">Contact</a>
         <a href="#" class="back-to-top">Top</a>
     </nav>
-    <h1>About</h1>
+    <h2>About</h2>
     <p>Hello!</p>
     <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my
         speciality and it’s taken me all over the world.</p>
 
-    <h1>Gallery</h1>
+    <h2>Gallery</h2>
     <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-    <div class="container">
+    <div class="figure-grid">
         <div class="Chile">
             <figure>
                 <img src="images/Chile.png" alt="Chile">
@@ -36,7 +36,7 @@
         </div>
         <div class="Guatemala">
             <figure>
-                <img src="images/Guatemala.png" alt="Guatemala">
+                <img src="C:\Users\kylei\Downloads\PHOTO GALLERY/images/Guatemala.png" alt="Guatemala">
                 <figcaption>Guatemala, 1997</figcaption>
             </figure>
         </div>
@@ -101,35 +101,36 @@
             </figure>
         </div>
     </div>
-
-
-
-
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Please fill out this form and I’ll connect with you soon.</p>
-            <form>
-                <ul>
-
-                    <li><label for="name">Name</label></li>
-
-                    <li><input type="text" placeholder="Your full name" id="name"></li>
-                    <li><label for="email"> Email</label></li>
-                    <li><input type="email" placeholder="Enter your email address" id="email"></li>
-                    <li><label for="message">Message</label></li>
-                    <li><input type="text" placeholder="What can I help you with?" id="message"></li>
-                </ul>
-            </form>
-        </section>
-        <a href="#submit" class="submit">Submit</a>
-    </footer>
-
-
-
-    <aside>
-        <small>Copyright &copy; 2021 TK Photography</small>
-    </aside>
 </body>
+
+
+
+<footer>
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>Please fill out this form and I’ll connect with you soon.</p>
+        <form>
+            <ul>
+
+                <li><label for="name">Name</label></li>
+
+                <li><input type="text" placeholder="Your full name" id="name"></li>
+                <li><label for="email"> Email</label></li>
+                <li><input type="email" placeholder="Enter your email address" id="email"></li>
+                <li><label for="message">Message</label></li>
+                <li><input type="text" placeholder="What can I help you with?" id="message"></li>
+                <div class="submit-container">
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+
+            </ul>
+        </form>
+    </section>
+
+    &copy; Copyright 2021 TK Photography
+</footer>
+
+
+
 
 </html>

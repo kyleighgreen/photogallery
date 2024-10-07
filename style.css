@@ -2,45 +2,78 @@
 
 html {
     background-color: black;
-    padding: 40px;
+    padding: 50px;
 }
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .figure-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    justify-items: center;
-    align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 header {
     color: #007d7b;
     text-align: center;
+    padding: 20px;
 }
 
-p {
+p,
+figcaption {
     font-size: 1.25em;
-    text-align: left;
+    text-align: center;
 }
 
 figcaption {
     justify-content: center;
+    z-index: 2;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1em
 }
 
-aside,
-small {
-    font-size: 1em;
+li,
+label {
     color: #ffffff;
+    font-size: 1em;
+    text-align: left;
+}
+
+input {
+    width: 775px;
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+input::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    opacity: .5;
+}
+
+
+
+footer {
     background-color: black;
+    color: white;
     text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    font-size: 1em;
 }
 
 nav {
@@ -56,7 +89,8 @@ nav a {
     font-weight: bold;
     color: #ffffff;
     padding: 10px;
-    display: inline;
+    display: fixed;
+
 }
 
 h1 {
@@ -68,13 +102,14 @@ h1+p {
     text-align: left;
 }
 
-h2 {
+h2,
+h3 {
     font-size: 2em;
     text-align: center;
 }
 
-h2+p {
-    text-align: center;
+h2~p {
+    text-align: left;
 }
 
 .back-to-top {
@@ -85,25 +120,13 @@ h2+p {
     background-color: black;
     color: white;
     text-decoration: none;
-}
 
-/* Centered footer */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
-
 
 .submit-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-
 }
 
 .submit {
@@ -112,75 +135,58 @@ footer {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 20px;
-    width: 250px;
+    width: 350px;
     text-align: center;
     font-size: 1em;
-    cursor: pointer;
+    margin-top: 50px;
 }
+
 
 contact,
 ul {
     list-style-type: none;
-    text-align: left;
+    text-align: center;
 }
 
-input {
-    width: 600px;
-    padding: 5px;
-    font-size: 1em;
-    margin-bottom: 20px;
-    display: flex;
-}
 
-input::placeholder {
-    color: #007d7b;
-    font-weight: bold;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    opacity: .5;
-}
 
-label {
-    color: #ffffff;
-    font-size: 1em;
-    text-align: left;
-}
 
-.container {
-    display: grid;
-    gap: 20px;
-    /* Adds space between grid items */
-    padding: 20px;
-}
-
-.container {
-    grid-template-columns: repeat(1, 1fr);
-    /* 1 column layout */
-}
-
-.container figure {
-    margin: 0;
-}
-
-.container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (min-width: 485px) {
-    .container {
-        grid-template-columns: repeat(1, 1fr);
+/* 1 column layout for screens smaller than 485px */
+@media (max-width: 485px) {
+    .figure-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (min-width: 880px) {
-    .container {
+/* 2 column layout for screens 485px and wider */
+@media (min-width: 485px) {
+    .figure-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1300px) {
-    .container {
+/* 3 column layout for screens 880px and wider */
+@media (min-width: 880px) {
+    .figure-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* 4 column layout for screens 1300px and wider */
+@media (min-width: 1300px) {
+    .figure-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
 }
