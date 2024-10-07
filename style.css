@@ -23,7 +23,7 @@ p {
 
 .figure-grid {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
 }
 
@@ -161,9 +161,6 @@ ul {
 }
 
 
-
-
-/* 1 column layout for screens smaller than 485px */
 @media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
@@ -173,7 +170,7 @@ ul {
 /* 2 column layout for screens 485px and wider */
 @media (min-width: 485px) {
     .figure-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
@@ -188,21 +185,4 @@ ul {
 @media (min-width: 1300px) {
     .figure-grid {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    input {
-        width: 50%;
-        max-width: 600px;
-    }
-
-    figure {
-        margin: 0;
-        text-align: center;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: grid;
-        margin: 0;
     }
