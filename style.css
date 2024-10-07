@@ -177,12 +177,12 @@ ul {
 /* 3 column layout for screens 880px and wider */
 @media (min-width: 880px) {
     .figure-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* 4 column layout for screens 1300px and wider */
 @media (min-width: 1300px) {
     .figure-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
