@@ -38,9 +38,6 @@ figcaption {
     position: absolute;
     left: 0;
     width: 100%;
-    color: white;
-    z-index: 10;
-    /* Ensure the caption is above the image */
 }
 
 li,
