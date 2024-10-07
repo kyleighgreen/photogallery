@@ -38,7 +38,7 @@ figcaption {
     justify-content: center;
     z-index: 2;
     font-weight: bold;
-    font-size: 1em
+    position: relative;
 }
 
 li,
