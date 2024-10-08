@@ -13,7 +13,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
 }
 
@@ -25,6 +24,8 @@ p {
     display: grid;
     gap: 10px;
     padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 header {
@@ -34,13 +35,12 @@ header {
 }
 
 figcaption {
-    top: 0;
     width: 100%;
     font-size: 1.25em;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    z-index: 10;
+    margin-top: 10px;
 
 }
 
@@ -162,18 +162,14 @@ ul {
 }
 
 
+
+
 @media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* 2 column layout for screens 485px and wider */
-@media (max-width: 485px) {
-    .figure-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* 3 column layout for screens 880px and wider */
 @media (max-width: 880px) {
@@ -186,4 +182,15 @@ ul {
 @media (max-width: 1300px) {
     .figure-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
