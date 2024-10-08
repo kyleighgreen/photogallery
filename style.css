@@ -164,33 +164,42 @@ ul {
 
 
 
+/* 1 column layout for screens smaller than 485px */
 @media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
     }
 }
 
-
-/* 3 column layout for screens 880px and wider */
-@media (max-width: 880px) {
+/* 2 column layout for screens 485px and wider */
+@media (min-width: 485px) {
     .figure-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* 4 column layout for screens 1300px and wider */
-@media (max-width: 1300px) {
+/* 3 column layout for screens 880px and wider */
+@media (min-width: 880px) {
     .figure-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+}
 
-    figure {
-        margin: 0;
-        text-align: center;
+/* 4 column layout for screens 1300px and wider */
+@media (min-width: 1300px) {
+    .figure-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
+}
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
