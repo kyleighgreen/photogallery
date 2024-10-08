@@ -162,28 +162,28 @@ ul {
 }
 
 
-@media (min-width: 485px) {
+@media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
     }
 }
 
 /* 2 column layout for screens 485px and wider */
-@media (min-width: 485px) {
+@media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
     }
 }
 
 /* 3 column layout for screens 880px and wider */
-@media (min-width: 880px) {
+@media (max-width: 880px) {
     .figure-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* 4 column layout for screens 1300px and wider */
-@media (min-width: 1300px) {
+@media (max-width: 1300px) {
     .figure-grid {
         grid-template-columns: repeat(3, 1fr);
     }
