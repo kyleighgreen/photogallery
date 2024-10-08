@@ -42,9 +42,7 @@ figcaption {
     font-weight: bold;
     position: absolute;
     top: 0;
-    /* Moves caption to the top */
     color: white;
-    /* Text color */
     padding: 10px;
     box-sizing: border-box;
 
@@ -171,28 +169,28 @@ ul {
 
 
 
-/* 1 column layout for screens smaller than 485px */
+/* 1 column layout */
 @media (max-width: 485px) {
     .figure-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* 2 column layout for screens 485px and wider */
+/* 2 column layout */
 @media (min-width: 485px) {
     .figure-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* 3 column layout for screens 880px and wider */
+/* 3 column layout*/
 @media (min-width: 880px) {
     .figure-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* 4 column layout for screens 1300px and wider */
+/* 4 column layout */
 @media (min-width: 1300px) {
     .figure-grid {
         grid-template-columns: repeat(4, 1fr);
