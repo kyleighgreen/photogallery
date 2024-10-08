@@ -40,7 +40,14 @@ figcaption {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    /* Moves caption to the top */
+    color: white;
+    /* Text color */
+    padding: 10px;
+    box-sizing: border-box;
+
 
 }
 
